@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Donation.css";
 import supabase from "../../config/supabaseClient";
 
+import CleaningCard from "../../Components/CleaningCard";
+
 const Donation = () => {
 
   const [cleaning, setCleaning] = useState([]);
@@ -23,14 +25,15 @@ const Donation = () => {
     <div>
       <h2>Donation Page</h2>
       {cleaning && (
-        <div className="items">
-          {cleaning.map(item => (
-            <p>{item.name}</p>
-          ))}
-        </div>
+        <div className="cleaning">
+            {cleaning.map((item) => (
+              <CleaningCard key={item.id} cleaning={item} />
+            ))}
+      </div>
       )}
     </div>
   );
 };
 
 export default Donation;
+
