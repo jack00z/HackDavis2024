@@ -17,6 +17,7 @@ import DonationM from "./Pages/Donation/DonationM";
 import Login from "./Pages/Donation/Login";
 import DonationAdmin from "./Pages/Donation/Admin/DonationAdmin";
 import Create from "./Pages/Donation/Admin/Create";
+import Update from "./Pages/Donation/Admin/Update";
 
 // importing styles
 import "./App.css";
@@ -45,6 +46,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<DonationAdmin />} />
           <Route path="/create" element={<Create />} />
+          <Route path="/update" element={<Update />} />
         </Routes>
         <Footer />
       </div>

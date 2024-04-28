@@ -80,6 +80,8 @@ const DonationAdmin = () => {
             {/* Probably sets a flag, and then set if statements on the database elements listed */}
             <button onClick={() => setOrder('quantity')}>Quantity</button>
             <button onClick={() => setOrder('name')}>Name</button>
+            <button onClick={() => handleClick("/create")}>Add a new item</button>
+            <button onClick={() => handleClick("/update")}>Update inventory</button>
       </div>
 
       {/* Database Elements Listed */}
