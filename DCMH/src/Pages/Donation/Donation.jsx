@@ -83,7 +83,6 @@ const Donation = () => {
             <button onClick={() => handleClick("/donationfs")}>Food & Supplies</button>
             <button onClick={() => handleClick("/donationh")}>Hygiene</button>
             <button onClick={() => handleClick("/donationm")}>Medicine</button>
-            <button onClick={() => handleClick("/login")}>Are you an Admin?</button>
             <button onClick={() => setOrder('quantity')}>Quantity</button>
             <button onClick={() => setOrder('name')}>Name</button>
       </div>

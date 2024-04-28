@@ -1,9 +1,9 @@
 const FoodCard = ({ food }) => {
     return (
         <div className="foodCard">
-            <h3>{food.name}</h3>
-            <h2>{food.id}</h2>
-            <div className="quantity">{food.quantity}</div>
+            <h2>{food.name}</h2>
+            <h3>ID Number: {food.id}</h3>
+            <div className="quantity">Quantity: {food.quantity}</div>
         </div>
     )
 }

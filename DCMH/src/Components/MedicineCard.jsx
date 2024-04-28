@@ -1,9 +1,9 @@
 const MedicineCard = ({ medicine }) => {
     return (
         <div className="medicineCard">
-            <h3>{medicine.name}</h3>
-            <h2>{medicine.id}</h2>
-            <div className="quantity">{medicine.quantity}</div>
+            <h2>{medicine.name}</h2>
+            <h3>ID Number: {medicine.id}</h3>
+            <div className="quantity">Quantity: {medicine.quantity}</div>
         </div>
     )
 }

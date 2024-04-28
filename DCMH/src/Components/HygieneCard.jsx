@@ -1,9 +1,9 @@
 const HygieneCard = ({ hygiene }) => {
     return (
         <div className="hygieneCard">
-            <h3>{hygiene.name}</h3>
-            <h2>{hygiene.id}</h2>
-            <div className="quantity">{hygiene.quantity}</div>
+            <h2>{hygiene.name}</h2>
+            <h3>ID Number: {hygiene.id}</h3>
+            <div className="quantity">Quantity: {hygiene.quantity}</div>
         </div>
     )
 }

@@ -1,9 +1,9 @@
 const CleaningCard = ({ cleaning }) => {
     return (
         <div className="cleaningCard">
-            <h3>{cleaning.name}</h3>
-            <h2>{cleaning.id}</h2>
-            <div className="quantity">{cleaning.quantity}</div>
+            <h2>{cleaning.name}</h2>
+            <h3>ID Number: {cleaning.id}</h3>
+            <div className="quantity">Quantity: {cleaning.quantity}</div>
         </div>
     )
 }
