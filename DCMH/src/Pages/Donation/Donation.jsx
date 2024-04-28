@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Donation.css";
+import supabase from "../../config/supabaseClient";
 
 const Donation = () => {
+
+  const [cleaning, setCleaning] = useState([]);
+
+  useEffect(() => {
+    const getCleaning = async () => {
+      const { data } = await supabase
+        .from('cleaning')
+        .select();
+
+        setCleaning(data);
+    }
+
+    getCleaning();
+
+  }, []);
+
   return (
     <div>
       <h2>Donation Page</h2>
-      {/* Add content for the donation page */}
+      {cleaning && (
+        <div className="items">
+          {cleaning.map(item => (
+            <p>{item.name}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
