@@ -1,0 +1,39 @@
+.h-container {
+	width: 100%;	
+	border: 1px solid gray;
+}
+
+.home-button {
+	font-size: 20px;
+	position: relative;
+	left: 0;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+
+	width: 100%;	
+	/* border: 1px solid gray; */
+
+	cursor: pointer;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 90%;
+	margin-left: 10%;
+	gap: 75px;
+	
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+}
+
+.donate-button{
+	cursor: pointer;
+	border: 10px solid orange;
+	border-width: 12px 30px;
+	border-radius: 30px;
+	color: white;
+	background-color: orange;
+}

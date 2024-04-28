@@ -1,3 +1,130 @@
-.UserName{
-	border: 10px black;
+.parent {
+	background-image: url('DCMH/src/Components/Images/Background1.png');
+	background-size: cover; 
+	background-position: center; 
+  }
+
+.tparent-container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	height: 250px;
+
+	border: 1px solid black;
 }
+
+.title-container{	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7%;
+  
+	width: 600px;
+	height: 122px;
+
+	border: 1px solid black;
+
+	color: #3d3d3d;
+	font-size: 50px;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+}
+
+.text-container{
+	display: flex;
+	flex-direction: column;
+	margin-left: 15%;
+	width: 70%;
+
+	border: 1px solid black;
+
+	font-family: 'Inter', sans-serif;
+}
+
+.text{
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.donation-button{
+	margin-top: 5%;
+
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+
+	cursor: pointer;
+	border: 10px solid orange;
+	border-width: 12px 40px;
+	border-radius: 30px;
+	color: white;
+	background-color: orange;
+}
+
+.stats-container{
+	display: flex;	
+	flex-direction: column;
+	align-items: center	;
+	height: 217px;
+	width: 90%;
+
+	margin-top: 5%;
+	margin-left: 5%;
+
+	gap: 0px;
+	border: 1px solid black;	
+	border-radius: 20px;
+}
+
+.stats-pic{
+	display: flex;
+	width: 80%;
+	height: 70px;
+	border: 1px solid black;
+}
+
+.stats-num{
+	display: flex;
+	font-size: 60px;
+	width: 80%;
+	justify-content: space-between;
+
+	border: 1px solid black;	
+}	
+
+.stats-words {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+
+	border: 1px solid black;
+  }
+
+  .meals {
+	margin-left: 65px;
+  }
+
+  .volunteers{
+	margin-left: 25px;
+  }
+
+  .dollars{
+	margin-left: 25px;
+  }
+
+  .housing{
+	margin-right: 15px;
+  }
+
+  .resource-container{
+	margin-top: 300px;
+
+	border: 1px solid black;
+  }
