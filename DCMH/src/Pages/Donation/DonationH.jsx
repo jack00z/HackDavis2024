@@ -11,7 +11,7 @@ import FoodCard from "../../Components/FoodCard";
 import HygieneCard from "../../Components/HygieneCard";
 import MedicineCard from "../../Components/MedicineCard";
 
-const Donation = () => {
+const DonationH = () => {
 
   let navigate = useNavigate();
 
@@ -89,24 +89,6 @@ const Donation = () => {
 
       {/* Database Elements Listed */}
 
-      {cleaning && (
-        <div className="cleaning">
-            {cleaning.map((item) => (
-              <CleaningCard key={item.id} cleaning={item} />
-            ))}
-      </div>
-      
-      )} 
-
-      {food && (
-        <div className="food">
-            {food.map((item) => (
-              <FoodCard key={item.id} food={item} />
-            ))}
-      </div>
-      
-      )} 
-
       {hygiene && (
         <div className="hygiene">
             {hygiene.map((item) => (
@@ -114,19 +96,10 @@ const Donation = () => {
             ))}
       </div>
       
-      )} 
-
-      {medicine && (
-        <div className="medicine">
-            {medicine.map((item) => (
-              <MedicineCard key={item.id} medicine={item} />
-            ))}
-      </div>
-      
-      )} 
+      )}       
     </div>
   );
 };
 
-export default Donation;
+export default DonationH;
 

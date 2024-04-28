@@ -1,17 +1,17 @@
 //Imports
 import React, { useEffect, useState } from "react";
-import "./Donation.css";
-import supabase from "../../config/supabaseClient";
+import "./DonationAdmin.css";
+import supabase from "../../../config/supabaseClient";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 //Components
-import CleaningCard from "../../Components/CleaningCard";
-import FoodCard from "../../Components/FoodCard";
-import HygieneCard from "../../Components/HygieneCard";
-import MedicineCard from "../../Components/MedicineCard";
+import CleaningCard from "../../../Components/CleaningCard";
+import FoodCard from "../../../Components/FoodCard";
+import HygieneCard from "../../../Components/HygieneCard";
+import MedicineCard from "../../../Components/MedicineCard";
 
-const Donation = () => {
+const DonationAdmin = () => {
 
   let navigate = useNavigate();
 
@@ -78,13 +78,10 @@ const Donation = () => {
       {/* Buttons */}
       <div className="order">
             {/* Probably sets a flag, and then set if statements on the database elements listed */}
-            <button onClick={() => handleClick("/donation")}>All</button>
-            <button onClick={() => handleClick("/donationcs")}>Cleaning & Sanitation</button>
-            <button onClick={() => handleClick("/donationfs")}>Food & Supplies</button>
-            <button onClick={() => handleClick("/donationh")}>Hygiene</button>
-            <button onClick={() => handleClick("/donationm")}>Medicine</button>
             <button onClick={() => setOrder('quantity')}>Quantity</button>
             <button onClick={() => setOrder('name')}>Name</button>
+            <button onClick={() => handleClick("/create")}>Add a new item</button>
+            <button onClick={() => handleClick("/update")}>Update inventory</button>
       </div>
 
       {/* Database Elements Listed */}
@@ -128,5 +125,5 @@ const Donation = () => {
   );
 };
 
-export default Donation;
+export default DonationAdmin;
 
