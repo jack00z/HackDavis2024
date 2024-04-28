@@ -7,4 +7,4 @@ const HygieneCard = ({ hygiene }) => {
     )
 }
 
-export default HygieneCardCard
+export default HygieneCard

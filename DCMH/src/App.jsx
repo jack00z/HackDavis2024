@@ -9,7 +9,11 @@ import Footer from "./Components/Footer/Footer";
 
 // importing pages
 import Home from "./Pages/Home/Home";
-import Donation from "./Pages/Donation/Donation"; //
+import Donation from "./Pages/Donation/Donation"; 
+import DonationCS from "./Pages/Donation/DonationCS";
+import DonationFS from "./Pages/Donation/DonationFS";
+import DonationH from "./Pages/Donation/DonationH";
+import DonationM from "./Pages/Donation/DonationM";
 
 // importing styles
 import "./App.css";
@@ -31,6 +35,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/donation" element={<Donation />} />
+          <Route path="/donationcs" element={<DonationCS />} />
+          <Route path="/donationfs" element={<DonationFS />} />
+          <Route path="/donationh" element={<DonationH />} />
+          <Route path="/donationm" element={<DonationM />} />
         </Routes>
         <Footer />
       </div>
